@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--linking local CSS file-->
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+
+        <title>Get day</title>
+    </head>
+
+    <body onload="textFill()">
+        <div class="container">
+            <div class="row">
+                <label for="date">Enter date: </label>
+                <form>
+                    <input type="number" min="01" max="31" id="date">
+                </form>
+            </div>
+
+            <div class="row">
+                <label for="month">Select month: </label>
+                <select name="month" id="month">
+                    <option id="mo"></option>
+                    <option>Janaury</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="month">Enter year: </label>
+                <form>
+                    <input type="number" min="1600" max="2022" id="year">
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <button type="button" onclick="getDay()">Get day</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p id="enterDay"></p>
+            </div>
+        </div>
+        <!--linking local JS file-->
+        <script type="text/javascript" src="script/script.js"></script>
+    </body>
+</html>
