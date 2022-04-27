@@ -23,7 +23,7 @@ function getDay() {
 }
         
 function getMonthNumber(Month) {
-    for(var i = 0; i < 11; i++) {
+    for(var i = 0; i < 12; i++) {
         if(monthName[i] == Month) {
             return i;
         }
